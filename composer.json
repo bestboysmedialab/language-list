@@ -1,0 +1,23 @@
+{
+    "name": "bestboysmedialab/language-list",
+    "description": "List of all languages with names and ISO 3166-1 codes in all languages and data formats for Laravel 5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Volker Ansmann",
+            "email": "volker.ansmann@bestboys-medialab.com",
+            "homepage": "http://www.bestboys-medialab.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "umpirsky/language-list": "1.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Bestboysmedialab\\LanguageList": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
