@@ -7,7 +7,7 @@ Language List is a package for Laravel 5 which lists all langauges with names an
 
 Add `bestboysmedialab/language-list` to `composer.json`.
 
-    "bestboysmedialab/language-list": "1.1.1"
+    "bestboysmedialab/language-list": "1.1.2"
     
 Run `composer update` to pull down the latest version of Country List.
 
