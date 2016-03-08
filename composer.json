@@ -12,7 +12,6 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "bestboysmedialab/language": "1.0.1"
     },
     "autoload": {
         "psr-0": {

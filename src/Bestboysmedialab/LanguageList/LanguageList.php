@@ -45,8 +45,8 @@ class LanguageList {
 	{
 		if (!isset($dataDir))
 		{
-			$r = new \ReflectionClass('Bestboysmedialab\Language\Builder\Builder');
-			$dataDir = sprintf('%s/../../../../language', dirname($r->getFileName()));
+			$r = new \ReflectionClass('Bestboysmedialab\Languagelist\ReflectionClass');
+			$dataDir = sprintf('%s/../../../data', dirname($r->getFileName()));
 		}
 
 		if (!is_dir($dataDir))
@@ -122,7 +122,7 @@ class LanguageList {
 		if (!isset($this->dataCache[$locale][$format]))
 		{
 			
-			$file = sprintf('%s/%s/country.'.$format, $this->dataDir, $locale);
+			$file = sprintf('%s/%s/language.'.$format, $this->dataDir, $locale);
 
 			if (!is_file($file))
 			{
