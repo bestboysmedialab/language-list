@@ -45,7 +45,7 @@ class LanguageList {
 	{
 		if (!isset($dataDir))
 		{
-			$r = new \ReflectionClass('Umpirsky\Language\Builder\Builder');
+			$r = new \ReflectionClass('Bestboysmedialab\Language\Builder\Builder');
 			$dataDir = sprintf('%s/../../../../language', dirname($r->getFileName()));
 		}
 
