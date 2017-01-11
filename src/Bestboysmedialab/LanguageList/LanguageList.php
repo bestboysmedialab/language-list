@@ -75,15 +75,15 @@ class LanguageList {
 	 */
 	public function getOne($languageCode, $locale = 'en')
 	{
-		$languageCode = mb_strtoupper($languageCode);
-		$locales = $this->loadData($locale, 'php');
 
-		if (!$this->has($languageCode, $locale))
+		$result = $this->has($languageCode, $locale);
+
+		if (!$result)
 		{
 			throw new LanguageNotFoundException($languageCode);
 		}
 
-		return $locales[mb_strtoupper($languageCode)];
+		return $result;
 	}
 
 	/**
@@ -173,7 +173,12 @@ class LanguageList {
 	{
 		$locales = $this->loadData($locale, 'php');
 
-		return isset($locales[mb_strtoupper($languageCode)]);
+		if (isset($locales[$languageCode])) {
+			return $locales[$languageCode];
+		}
+		
+		return false;
+		
 	}
 }
 
