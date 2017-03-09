@@ -41,7 +41,7 @@ class LanguageListServiceProvider extends ServiceProvider {
 	{
 		$this->app->singleton('LanguageList', function ($app) {
 			return new LanguageList;
-		})
+		});
 	}
 
 	/**
