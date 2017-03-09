@@ -39,10 +39,7 @@ class LanguageListServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['languagelist'] = $this->app->share(function($app)
-		{
-			return new LanguageList;
-		});
+		$this->app->singleton('languagelist', LanguageList::class);
 	}
 
 	/**
