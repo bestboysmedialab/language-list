@@ -30,6 +30,6 @@ class LanguageListFacade extends Facade {
      *
      * @return string
      */
-    protected static function getFacadeAccessor() { return 'languagelist'; }
+    protected static function getFacadeAccessor() { return LanguageList::class; }
  
 }
